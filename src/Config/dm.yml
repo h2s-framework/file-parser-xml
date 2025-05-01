@@ -1,0 +1,14 @@
+id: Core.Files.FileParserXml.default
+
+types:
+  \Siarko\FileParserXml\Api\Parser\XmlParserInterface: \Siarko\FileParserXml\Parser\XmlFileParser
+  \Siarko\FileParserXml\Api\Parser\Result\NodeInterface: \Siarko\FileParserXml\Parser\Result\Node
+  \Siarko\FileParserXml\Api\Parser\ParserOptionsInterface: \Siarko\FileParserXml\Parser\ParserOptions
+
+arguments:
+  \Siarko\Files\Parse\ParserManager:
+    parsers:
+      default:
+        xml:
+          mimeTypes: [ application/xml, text/xml ]
+          parser: !type:object \Siarko\FileParserXml\Parser\XmlFileParser

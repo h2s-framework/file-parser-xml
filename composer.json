@@ -1,0 +1,23 @@
+{
+  "name": "h2sf/file-parser-xml",
+  "description": "File parser module for XML files - H2S Framework",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "type": "library",
+  "version": "0.1.1",
+  "authors": [
+    {
+      "name": "H2S",
+      "email": "mateusz@siarko.pl"
+    }
+  ],
+    "require": {
+      "ext-simplexml": "*",
+      "h2sf/file-abstraction": "^0.2.1"
+    },
+  "autoload": {
+    "psr-4": {
+      "Siarko\\FileParserXml\\": "src/"
+    }
+  }
+}
